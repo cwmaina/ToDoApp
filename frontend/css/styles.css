@@ -1,0 +1,49 @@
+:root {
+    --primary: purple;
+    --secondary: grey;
+}
+
+
+nav, footer {
+    background-color: var(--primary);
+    color: white;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.backgroundimg {
+    background-image: url(../images/backgroundimg.jpg);
+    min-height: 90vh;
+    height: auto;
+    background-size: cover;
+    background-size: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.184);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.pageNotReady {
+    background-color: white;
+    height: 66vh;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.2s ease-in-out;
+}
+
+form a:hover {
+    color: var(--secondary);
+}
