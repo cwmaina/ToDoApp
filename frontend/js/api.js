@@ -1,6 +1,6 @@
 // ----------------------- GLOBAL VARIABLES (ALLOWED TO BE USED IN EVERY FUNCTION ONWARDS)---------------------
 
-    const URL = "http://127.0.0.1:3000";
+    const URL = "https://todoapp-0m7b.onrender.com";
     const taskForm = document.getElementById("taskForm");
     const toDoList = document.getElementById("toDoList");
     const completedList = document.getElementById("completedList");
