@@ -17,13 +17,13 @@
 
 
     const corsOptions = {
-        origin: ["https://to-do-app-fawn-sigma.vercel.app", "http://127.0.0.1:5500"], 
+        origin: "https://to-do-app-fawn-sigma.vercel.app", 
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true
     }
 
     app.use(cors(corsOptions)); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
-
+    // app.use(cors("*"));
 
 // ---------------------------------- ↓ API ROUTES ↓ --------------------------------------
 

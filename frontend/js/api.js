@@ -98,8 +98,7 @@
 
             saveChangesButton.addEventListener("click", async () => {
                 await editTask(taskId);
-
-                const editTaskModal = bootstrap.modal.getInstance(document.getElementById("editTaskWindow"));
+                const editTaskModal = bootstrap.Modal.getInstance(document.getElementById("editTaskWindow"));
                 editTaskModal.hide();
             },{ once: true });
 
