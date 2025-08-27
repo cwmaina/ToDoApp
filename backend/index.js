@@ -14,7 +14,15 @@
 // -------------------------------- ↓ MIDDLEWARE SETUP ↓ -----------------------------------
 
     app.use(express.json()); // Uses express JSON format
-    app.use(cors('*')); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
+
+
+    const corsOptions = {
+        origin: "https://to-do-app-fawn-sigma.vercel.app",
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        credentials: true
+    }
+
+    app.use(cors(corsOptions)); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
 
 
 // ---------------------------------- ↓ API ROUTES ↓ --------------------------------------
