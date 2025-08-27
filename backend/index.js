@@ -17,7 +17,7 @@
 
 
     const corsOptions = {
-        origin: "https://to-do-app-fawn-sigma.vercel.app",
+        origin: ["https://to-do-app-fawn-sigma.vercel.app", "http://127.0.0.1:5500"], 
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true
     }
